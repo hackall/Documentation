@@ -1,3 +1,5 @@
+######HAProxy Cluster Configuration Documented By Sourav Maity #######
+
 ######OS: CentOS 6
 
 ######Cluster IPs:
