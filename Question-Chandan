@@ -1,0 +1,27 @@
+1. How to write shell script to execute mysql query 
+
+A. You can use mysql command with argument -e 'SQL query' 
+
+i.e. - You want to take record count of a table. 
+
+#!/bin/bash
+count=$(mysql -u root -p'Abcd1234' -e 'select count(*) from database.table;')
+echo "There is/are $count number of records in database.table"
+
+
+
+2. Take backup of log files and delete from application server 
+
+A. 
+
+
+i.e. 
+#!/bin/bash
+
+find /logs/ -mtime +30 -exec scp {} user@IP:/path/ \;         #Note - To copy the logfiles to the backup servers you will require password less authentication or you have to mount Backup server partition locally
+find /logs/ -mtime +30 -delete
+
+
+3. Write a script to join two csv files based on velues of some column
+
+Need Example. 
